@@ -68,7 +68,7 @@ pip install Flask requests
 
 Tekan Enter dan tunggu sampai proses instalasi selesai. Perintah instalasi ini sesuai dengan modul praktikum.
 
-![pipinstall](img/pip-install.png)
+![pip install](/img/pip-install.png)
 
 2. Membuat Aplikasi Monolith
 
@@ -80,8 +80,10 @@ Langkah-langkah:
 3. Pada bagian Explorer, klik New File. 
 Beri nama: 
 4. monolith_app.py
+![gambar-2](/img/gambar-2.jpeg)
 5. Masukkan kode aplikasi Monolith yang telah disiapkan. 
- 
+ ![gambar-3](/img/gambar-3.jpeg)
+ ![gambar-4](/img/gambar-4.jpeg)
  
 Aplikasi memiliki data buku dan pesanan yang disimpan menggunakan in-memory database. Fitur buku dapat diakses melalui /books, sedangkan fitur pesanan menggunakan /orders.
 
@@ -95,12 +97,15 @@ Jalankan:
 python monolith_app.py
 Kemudian tekan Enter.
 Aplikasi akan dijalankan menggunakan Flask. Pada file yang kamu kirim, aplikasi Monolith menggunakan alamat host 127.0.0.1 dan port 5001. 
- 
+ ![gambar-5](/img/gambar-5.jpeg)
+
 4. Pengujian Fitur Buku pada Monolith
 Setelah aplikasi berjalan, buka Google Chrome.
 Pada address bar ketik:
 http://localhost:5001/books
 Kemudian tekan Enter.
+
+![gambar-6](/img/gambar-6.jpeg)
 Sistem akan menampilkan data buku yang tersedia. Data awal yang digunakan adalah:
  
 Data tersebut berasal dari database sementara yang terdapat pada aplikasi Monolith. 
@@ -120,7 +125,7 @@ Langkah-langkah:
 2.	Beri nama: 
 book_service.py
 3.	Masukkan kode book_service.py  
- 
+  ![gambar-7](/img/gambar-7.jpeg)
 4.	Simpan dengan: 
 Ctrl + S
 Book Service berjalan pada port 5001. 
@@ -133,7 +138,7 @@ Langkah-langkah:
 order_service.py
  
 3.	Masukkan kode order_service.py 
- 
+ ![gambar-8](/img/gambar-8.jpeg)
 4.	Simpan dengan: 
 Ctrl + S
 
@@ -185,8 +190,8 @@ Tekan Enter.
 
 Pada proses ini, Order Service menerima permintaan pesanan kemudian meminta informasi buku kepada Book Service melalui HTTP Request. Jika buku tersedia dan stok masih ada, pesanan dibuat. 
  
- 
-
+  ![gambar-9](/img/gambar-9.jpeg)
+ ![gambar-10](/img/gambar-10.jpeg)
 11. Pengujian Fault Isolation
 Tahap terakhir adalah menguji Fault Isolation.
 
@@ -206,7 +211,7 @@ Tekan Enter.
 
 Order Service masih berjalan, tetapi tidak dapat menghubungi Book Service.
 Maka hasilnya:
- 
+  ![gambar-11](/img/gambar-11.jpeg)
 
 
 
